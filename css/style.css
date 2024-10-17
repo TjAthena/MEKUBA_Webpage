@@ -251,18 +251,37 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
     height: calc(100vh - 117px);
-    min-height: 700px; }
+    min-height: 700px; 
+  }
+  .owl-carousel.home-slider .slider-item:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.2);
+      z-index: 0.3;
+       }
     .owl-carousel.home-slider .slider-item .slider-text {
       color: #000;
       height: calc(100vh - 117px);
       min-height: 700px; }
+
+    .para{
+      text-stroke: 3px #be0101; /* Standard property */
+      text-shadow: 
+        -1px -1px 0 #ffffff,  
+         1px -1px 0 #ffffff,
+
+    }
       .owl-carousel.home-slider .slider-item .slider-text h1 {
         font-size: 60px;
-        color: #464646;
+        color: #be0101;
         line-height: 1.2;
         font-weight: 1000 !important;
         text-transform: uppercase;
-        text-stroke: 2px #ffffff; /* Standard property */
+        text-stroke: 3px #ffffff; /* Standard property */
         text-shadow: 
           -1px -1px 0 #ffffff,  
            1px -1px 0 #ffffff,
@@ -399,6 +418,12 @@ header {
     font-size: 50px;
     color: white;
     font-weight: 300; }
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
 
 .heading {
   color: #000; }
