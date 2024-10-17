@@ -744,3 +744,44 @@ header {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+/* Add keyframes for the fade-in left-to-right animation */
+@keyframes fadeInLeftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeftToRight {
+  animation: fadeInLeftToRight 1s ease-in-out both;
+}
+
+/* Apply the animation to the container and its elements */
+.container-xxl {
+  animation: fadeInLeftToRight 1s ease-in-out both;
+}
+
+/* Add WOW.js animation delay classes for additional effects */
+.wow.fadeInUp[data-wow-delay="0.5s"] {
+  animation: fadeInLeftToRight 1.2s ease-in-out both;
+}
+
+.wow.fadeInUp[data-wow-delay="0.5s"] {
+  animation: fadeInLeftToRight 1.5s ease-in-out both;
+}
+
+/* Optional: Add animation to specific inner elements */
+.position-relative {
+  animation: fadeInLeftToRight 1.3s ease-in-out both;
+}
+
+.h-100 {
+  animation: fadeInLeftToRight 1.7s ease-in-out both;
+}
