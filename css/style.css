@@ -275,18 +275,22 @@ header {
          1px -1px 0 #ffffff,
 
     }
+    .tittle{
+      font-size: 140px;
+      color: #be0101;
+      line-height: 1.2;
+      font-weight: 1000 !important;
+      text-transform: uppercase;
+      text-stroke: 3px #ffffff; /* Standard property */
+      text-shadow: 
+        -1px -1px 0 #ffffff,  
+         1px -1px 0 #ffffff,
+         -1px 1px 0 #ffffff, 
+         1px 1px 0 #ffffff;
+
+    }
       .owl-carousel.home-slider .slider-item .slider-text h1 {
-        font-size: 60px;
-        color: #be0101;
-        line-height: 1.2;
-        font-weight: 1000 !important;
-        text-transform: uppercase;
-        text-stroke: 3px #ffffff; /* Standard property */
-        text-shadow: 
-          -1px -1px 0 #ffffff,  
-           1px -1px 0 #ffffff,
-           -1px 1px 0 #ffffff, 
-           1px 1px 0 #ffffff;
+       
            }
         .owl-carousel.home-slider .slider-item .slider-text h1::before{
           content: '';
@@ -316,31 +320,24 @@ header {
   }
 
   .owl-carousel.home-slider .slider-item .slider-text h1 {
-    font-size: 30px; /* Reduced font size for mobile */
+    font-size: 70px; /* Reduced font size for mobile */
     line-height: 1.1; /* Adjust line height */
-    text-stroke: 2px #ffffff; /* Adjust text-stroke for readability */
-    text-shadow: 
-      -1px -1px 0 #ffffff,  
-      1px -1px 0 #ffffff,
-      -1px 1px 0 #ffffff, 
-      1px 1px 0 #ffffff;
   }
 
   .owl-carousel.home-slider .slider-item .slider-text h1::before {
     width: 70%; /* Adjust the background blur size */
-    height: 70%;
-    filter: blur(100px); /* Reduce blur effect for mobile */
+    height: 70%;/* Reduce blur effect for mobile */
   }
 
   .para {
-    -webkit-text-stroke: 2px #be0101; /* Adjust stroke width for mobile */
-    text-shadow: 
-      -1px -1px 0 #ffffff,  
-       1px -1px 0 #ffffff;
+    position: relative;
+    -webkit-text-stroke: 0px #ffffff;
+    top: 50px; /* Adjust stroke width for mobile */
+
   }
 }
 
-      .owl-carousel.home-slider .slider-item .slider-text p {
+    .owl-carousel.home-slider .slider-item .slider-text p {
         font-size: 20px;
         line-height: 1.5;
         font-weight: 300;
@@ -814,4 +811,33 @@ header {
 
 .h-100 {
   animation: fadeInLeftToRight 1.7s ease-in-out both;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .h-100{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 20px;
+  }
+  .fadeInLeftToRight {
+    animation: fadeInLeftToRight 0.8s ease-in-out both; /* Shorter duration for mobile */
+  }
+
+  .container-xxl {
+    animation: fadeInLeftToRight 0.8s ease-in-out both; /* Shorter duration for mobile */
+  }
+
+  .wow.fadeInUp[data-wow-delay="0.5s"] {
+    animation: fadeInLeftToRight 1s ease-in-out both; /* Shorter duration for mobile */
+  }
+
+  .position-relative {
+    animation: fadeInLeftToRight 1s ease-in-out both; /* Shorter duration for mobile */
+  }
+
+  .h-100 {
+    animation: fadeInLeftToRight 1.2s ease-in-out both; /* Shorter duration for mobile */
+  }
 }
