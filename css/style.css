@@ -269,13 +269,21 @@ header {
       min-height: 700px; }
 
     .para{
-      text-stroke: 3px #be0101; /* Standard property */
-      text-shadow: 
-        -1px -1px 0 #ffffff,  
-         1px -1px 0 #ffffff,
-
+      position: relative;
+      top: 10.3cm;
+      left: 9.6cm;
     }
+    .paragra{
+      position: relative;
+      text-align-last: center;
+      top: 10.4cm;
+      left: 7cm; 
+    }
+
     .tittle{
+      position: absolute;
+      top: 5cm;
+      left: 7.5cm;
       font-size: 140px;
       color: #be0101;
       line-height: 1.2;
@@ -376,9 +384,7 @@ header {
       .owl-carousel.home-slider .owl-dots .owl-dot.active span {
         background: white; }
 
-.owl-carousel.major-caousel .owl-stage-outer {
-  padding-top: 30px;
-  padding-bottom: 30px; }
+
 
 .owl-carousel.major-caousel .owl-nav .owl-prev, .owl-carousel.major-caousel .owl-nav .owl-next {
   -webkit-transition: .3s all ease;
@@ -456,6 +462,7 @@ header {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+
   }
 
 .heading {
@@ -558,7 +565,9 @@ header {
 #modalAppointment .modal-content {
   border-radius: 0;
   border: none; }
-
+  .carousel {
+    height: 100vh;
+}
 #modalAppointment .modal-body, #modalAppointment .modal-footer {
   padding: 40px; }
 
@@ -841,3 +850,98 @@ header {
     animation: fadeInLeftToRight 1.2s ease-in-out both; /* Shorter duration for mobile */
   }
 }
+
+
+
+
+
+.hero-2 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh; }
+  .hero-2.overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.095);
+    z-index: 1; }
+  .hero-2 > .container {
+    position: relative;
+    z-index: 2; }
+
+
+
+
+    @media only screen and (max-width: 768px) {
+      .para {
+        position: relative;
+        top: 300px; /* Reduce top value for smaller screens */
+        left: 10px; /* Adjust left value to fit smaller screens */
+      }
+    
+      .paragra {
+        position: relative;
+        text-align: center;
+        top: 320px; /* Adjusted to keep centered on mobile */
+        left: 0px; /* Centered more for smaller screens */
+      }
+    
+      .tittle {
+        position: absolute;
+        top: 100px; /* Move title higher for smaller screens */
+        left: 1.5cm; /* Center on mobile devices */
+        font-size: 80px; /* Reduce font size for mobile */
+        color: #be0101;
+        line-height: 1.2;
+        font-weight: 1000 !important;
+        text-transform: uppercase;
+        text-shadow: 
+          -1px -1px 0 #ffffff,  
+          1px -1px 0 #ffffff,
+          -1px 1px 0 #ffffff, 
+          1px 1px 0 #ffffff;
+      }
+    }
+    
+.sec-1 .heading {
+  margin-bottom: 70px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block; }
+  @media (max-width: 767.98px) {
+    .sec-1 .heading {
+      font-size: 30px;
+      margin-bottom: 30px; } }
+  .sec-1 .heading:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 300%;
+    background: #000;
+    right: 0;
+    bottom: 0; }
+
+    @media only screen and (max-width: 768px) {
+      .hero-2 {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 60vh; /* Reduced height for mobile */
+      }
+      
+      .hero-2.overlay:before {
+        background: rgba(0, 0, 0, 0.2); /* Increase overlay opacity for better readability on mobile */
+      }
+      
+      .hero-2 > .container {
+        padding: 0 20px; /* Add padding for better spacing on smaller screens */
+        z-index: 2;
+      }
+    }
+    
