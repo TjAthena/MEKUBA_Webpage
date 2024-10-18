@@ -201,26 +201,7 @@ header {
   position: absolute;
   top: 50%;
   width: 100%; }
-  .owl-carousel .owl-nav .owl-prev,
-  .owl-carousel .owl-nav .owl-next {
-    position: absolute;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin-top: -10px; }
-    .owl-carousel .owl-nav .owl-prev:hover, .owl-carousel .owl-nav .owl-prev:focus, .owl-carousel .owl-nav .owl-prev:active,
-    .owl-carousel .owl-nav .owl-next:hover,
-    .owl-carousel .owl-nav .owl-next:focus,
-    .owl-carousel .owl-nav .owl-next:active {
-      outline: none; }
-    .owl-carousel .owl-nav .owl-prev span:before,
-    .owl-carousel .owl-nav .owl-next span:before {
-      font-size: 40px; }
-  .owl-carousel .owl-nav .owl-prev {
-    left: 30px !important; }
-  .owl-carousel .owl-nav .owl-next {
-    right: 30px !important; }
-
+  
 .owl-carousel .owl-dots {
   text-align: center; }
   .owl-carousel .owl-dots .owl-dot {
@@ -873,40 +854,6 @@ header {
   .hero-2 > .container {
     position: relative;
     z-index: 2; }
-
-
-
-
-    @media only screen and (max-width: 768px) {
-      .para {
-        position: relative;
-        top: 300px; /* Reduce top value for smaller screens */
-        left: 10px; /* Adjust left value to fit smaller screens */
-      }
-    
-      .paragra {
-        position: relative;
-        text-align: center;
-        top: 320px; /* Adjusted to keep centered on mobile */
-        left: 0px; /* Centered more for smaller screens */
-      }
-    
-      .tittle {
-        position: absolute;
-        top: 100px; /* Move title higher for smaller screens */
-        left: 1.5cm; /* Center on mobile devices */
-        font-size: 80px; /* Reduce font size for mobile */
-        color: #be0101;
-        line-height: 1.2;
-        font-weight: 1000 !important;
-        text-transform: uppercase;
-        text-shadow: 
-          -1px -1px 0 #ffffff,  
-          1px -1px 0 #ffffff,
-          -1px 1px 0 #ffffff, 
-          1px 1px 0 #ffffff;
-      }
-    }
     
 .sec-1 .heading {
   margin-bottom: 70px;
@@ -926,22 +873,100 @@ header {
     right: 0;
     bottom: 0; }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 480px) {
       .hero-2 {
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         position: relative;
-        height: 60vh; /* Reduced height for mobile */
+        height: 50vh; /* Further reduce height for small mobile screens */
       }
-      
+    
       .hero-2.overlay:before {
-        background: rgba(0, 0, 0, 0.2); /* Increase overlay opacity for better readability on mobile */
+        background: rgba(0, 0, 0, 0.25); /* Increase overlay opacity for better readability */
       }
-      
+    
       .hero-2 > .container {
-        padding: 0 20px; /* Add padding for better spacing on smaller screens */
+        padding: 0 15px; /* Smaller padding for smaller screens */
         z-index: 2;
       }
+    
+      .para {
+        position: relative;
+        top: 250px; /* Adjusted top value for smaller screens */
+        left: 5px;  /* Reduced left value for better alignment */
+      }
+    
+      .paragra {
+        position: relative;
+        text-align: center;
+        top: 260px; /* Adjusted to fit smaller screens */
+        left: 0px; /* Centered on mobile */
+      }
+    
+      .tittle {
+        position: absolute;
+        top: 130px; /* Move title higher for mobile */
+        left: 80px;  /* Center the title more on mobile */
+        font-size: 60px; /* Reduce font size for small mobile screens */
+        color: #be0101;
+        line-height: 1.1;
+        font-weight: 1000 !important;
+        text-transform: uppercase;
+        text-shadow: 
+          -1px -1px 0 #ffffff,  
+          1px -1px 0 #ffffff,
+          -1px 1px 0 #ffffff, 
+          1px 1px 0 #ffffff;
+      }
     }
+    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+      .hero-2 {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 70vh; /* Set height for tablets */
+      }
+    
+      .hero-2.overlay:before {
+        background: rgba(0, 0, 0, 0.2); /* Moderate opacity for tablet readability */
+      }
+    
+      .hero-2 > .container {
+        padding: 0 25px; /* Adjust padding for tablet screen sizes */
+        z-index: 2;
+      }
+    
+      .para {
+        position: relative;
+        top: 240px; /* Adjust top value for tablet */
+        left: 270px;  /* Adjust left value for larger screens */
+      }
+    
+      .paragra {
+        position: relative;
+        text-align: center;
+        top: 240px; /* Adjusted for tablet screens */
+        left: 240px;
+        font-size: 40px;
+      }
+    
+      .tittle {
+        position: absolute;
+        top: 120px; /* Adjust title positioning for tablet */
+        right: 512px;  /* Center on tablet */
+        font-size: 90px; /* Slightly smaller font size for tablets */
+        color: #be0101;
+        line-height: 1.2;
+        font-weight: 1000 !important;
+        text-transform: uppercase;
+        text-shadow: 
+          -1px -1px 0 #ffffff,  
+          1px -1px 0 #ffffff,
+          -1px 1px 0 #ffffff, 
+          1px 1px 0 #ffffff;
+      }
+    }
+        
     
