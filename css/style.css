@@ -207,14 +207,15 @@ header {
 
     .para{
       position: relative;
-      top: 10.3cm;
+      top: 5cm;
       left: 9.6cm;
+      font-size: 30px;
     }
     .paragra{
       position: relative;
       text-align-last: center;
-      top: 10.4cm;
-      left: 7cm; 
+      top: 5cm;
+      left: 8cm; 
     }
 
     .tittle{
@@ -886,7 +887,17 @@ header {
       }
     }
 
-
+.position-absolute img{
+  position: relative;
+  left: -50px;
+}
+.position-absolute1 img{
+  position: relative;
+  align-self: center;
+  left: 450px;
+  height: 100px;
+  
+}
     .container-products {
       position: relative;
       display: flex;
